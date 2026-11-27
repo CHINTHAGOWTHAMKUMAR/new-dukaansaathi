@@ -1,0 +1,6 @@
+{
+  "name": "DukaanSaathi",
+  "description": "Multilingual AI retail business companion for small Indian shopkeepers with voice commands in Telugu, Hindi, and English, Udhar ledger, inventory tracking, and offline synchronization.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,691 @@
+{
+  "shops": {
+    "demo-kirana": {
+      "profile": {
+        "id": "demo-kirana",
+        "code": "DEMO-KIRANA",
+        "name": "Sri Lakshmi Kirana & General Store",
+        "ownerName": "Venkatesh Rao",
+        "phone": "+91 98480 12345",
+        "address": "14-2 Main Bazaar Road, Hanamkonda",
+        "city": "Warangal, Telangana",
+        "shopType": "Kirana & Grocery",
+        "currency": "INR",
+        "isPublic": true,
+        "hasPin": false,
+        "lowStockDefault": 8,
+        "categories": [
+          "Grains & Pulses",
+          "Oils & Ghee",
+          "Dairy & Bakery",
+          "Snacks & Beverages",
+          "Personal Care",
+          "Vegetables",
+          "Household"
+        ],
+        "expenseCategories": [
+          "Electricity",
+          "Shop Rent",
+          "Wholesale Restock",
+          "Transport",
+          "Staff & Tea",
+          "Packaging",
+          "Maintenance",
+          "Other"
+        ],
+        "voiceReadbackEnabled": true,
+        "aiModel": "gemini-4-hydrogen",
+        "createdAt": "2026-10-28T15:37:48.881Z",
+        "updatedAt": "2026-11-27T15:37:48.881Z"
+      },
+      "products": [
+        {
+          "id": "prod-rice",
+          "shopId": "demo-kirana",
+          "name": "Sona Masoori Rice",
+          "localNames": {
+            "hi": "चावल (सोना मसूरी)",
+            "te": "బియ్యం (సోనా మసూరి)"
+          },
+          "category": "Grains & Pulses",
+          "unit": "kg",
+          "price": 52,
+          "costPrice": 44,
+          "stock": 48,
+          "minStock": 15,
+          "sku": "GRN-001",
+          "updatedAt": "2026-11-27T03:37:48.881Z"
+        },
+        {
+          "id": "prod-toordal",
+          "shopId": "demo-kirana",
+          "name": "Toor Dal",
+          "localNames": {
+            "hi": "तूर दाल",
+            "te": "కందిపప్పు"
+          },
+          "category": "Grains & Pulses",
+          "unit": "kg",
+          "price": 155,
+          "costPrice": 136,
+          "stock": 6,
+          "minStock": 10,
+          "sku": "GRN-002",
+          "updatedAt": "2026-11-27T07:37:48.881Z"
+        },
+        {
+          "id": "prod-sugar",
+          "shopId": "demo-kirana",
+          "name": "Refined Sugar",
+          "localNames": {
+            "hi": "चीनी / शक्कर",
+            "te": "చక్కెర / పంచదార"
+          },
+          "category": "Grains & Pulses",
+          "unit": "kg",
+          "price": 46,
+          "costPrice": 40,
+          "stock": 22,
+          "minStock": 10,
+          "sku": "GRN-003",
+          "updatedAt": "2026-11-27T00:37:48.881Z"
+        },
+        {
+          "id": "prod-oil",
+          "shopId": "demo-kirana",
+          "name": "Sunflower Cooking Oil",
+          "localNames": {
+            "hi": "सूरजमुखी तेल",
+            "te": "వంట నూనె"
+          },
+          "category": "Oils & Ghee",
+          "unit": "litre",
+          "price": 145,
+          "costPrice": 128,
+          "stock": 5,
+          "minStock": 8,
+          "sku": "OIL-001",
+          "updatedAt": "2026-11-27T10:37:48.881Z"
+        },
+        {
+          "id": "prod-atta",
+          "shopId": "demo-kirana",
+          "name": "Wheat Flour (Atta)",
+          "localNames": {
+            "hi": "गेहूँ का आटा",
+            "te": "గోధుమ పిండి"
+          },
+          "category": "Grains & Pulses",
+          "unit": "kg",
+          "price": 42,
+          "costPrice": 35,
+          "stock": 30,
+          "minStock": 10,
+          "sku": "GRN-004",
+          "updatedAt": "2026-11-26T19:37:48.881Z"
+        },
+        {
+          "id": "prod-milk",
+          "shopId": "demo-kirana",
+          "name": "Fresh Milk Packet (500ml)",
+          "localNames": {
+            "hi": "दूध पैकेट",
+            "te": "పాలు ప్యాకెట్"
+          },
+          "category": "Dairy & Bakery",
+          "unit": "pkt",
+          "price": 30,
+          "costPrice": 27,
+          "stock": 4,
+          "minStock": 12,
+          "sku": "DRY-001",
+          "updatedAt": "2026-11-27T13:37:48.881Z"
+        },
+        {
+          "id": "prod-tea",
+          "shopId": "demo-kirana",
+          "name": "Red Label Tea (250g)",
+          "localNames": {
+            "hi": "चाय पत्ती",
+            "te": "టీ పొడి"
+          },
+          "category": "Snacks & Beverages",
+          "unit": "pkt",
+          "price": 135,
+          "costPrice": 118,
+          "stock": 14,
+          "minStock": 6,
+          "sku": "BEV-001",
+          "updatedAt": "2026-11-26T15:37:48.881Z"
+        },
+        {
+          "id": "prod-parle",
+          "shopId": "demo-kirana",
+          "name": "Parle-G Biscuit Pack",
+          "localNames": {
+            "hi": "बिस्कुट",
+            "te": "బిస్కెట్ ప్యాకెట్"
+          },
+          "category": "Snacks & Beverages",
+          "unit": "pkt",
+          "price": 10,
+          "costPrice": 8.5,
+          "stock": 64,
+          "minStock": 20,
+          "sku": "SNK-001",
+          "updatedAt": "2026-11-26T21:37:48.881Z"
+        },
+        {
+          "id": "prod-soap",
+          "shopId": "demo-kirana",
+          "name": "Dettol Bath Soap",
+          "localNames": {
+            "hi": "साबुन",
+            "te": "సబ్బు"
+          },
+          "category": "Personal Care",
+          "unit": "pcs",
+          "price": 38,
+          "costPrice": 32,
+          "stock": 19,
+          "minStock": 10,
+          "sku": "PRC-001",
+          "updatedAt": "2026-11-26T09:37:48.881Z"
+        },
+        {
+          "id": "prod-onion",
+          "shopId": "demo-kirana",
+          "name": "Onions",
+          "localNames": {
+            "hi": "प्याज",
+            "te": "ఉల్లిపాయలు"
+          },
+          "category": "Vegetables",
+          "unit": "kg",
+          "price": 36,
+          "costPrice": 28,
+          "stock": 7,
+          "minStock": 10,
+          "sku": "VEG-001",
+          "updatedAt": "2026-11-27T12:37:48.881Z"
+        },
+        {
+          "id": "prod-tomato",
+          "shopId": "demo-kirana",
+          "name": "Tomatoes",
+          "localNames": {
+            "hi": "टमाटर",
+            "te": "టమాటా"
+          },
+          "category": "Vegetables",
+          "unit": "kg",
+          "price": 40,
+          "costPrice": 30,
+          "stock": 12,
+          "minStock": 8,
+          "sku": "VEG-002",
+          "updatedAt": "2026-11-27T11:37:48.881Z"
+        },
+        {
+          "id": "prod-detergent",
+          "shopId": "demo-kirana",
+          "name": "Surf Excel Powder (500g)",
+          "localNames": {
+            "hi": "डिटर्जेंट पाउडर",
+            "te": "సర్ఫ్ పొడి"
+          },
+          "category": "Household",
+          "unit": "pkt",
+          "price": 72,
+          "costPrice": 61,
+          "stock": 11,
+          "minStock": 6,
+          "sku": "HHD-001",
+          "updatedAt": "2026-11-26T03:37:48.881Z"
+        }
+      ],
+      "customers": [
+        {
+          "id": "cust-ravi",
+          "shopId": "demo-kirana",
+          "name": "Ravi Kumar",
+          "phone": "98491 22011",
+          "address": "Gandhi Nagar, Lane 3",
+          "udharBalance": 500,
+          "lastActivityAt": "2026-11-27T10:37:48.881Z",
+          "reminderNote": "Monthly grocery account",
+          "updatedAt": "2026-11-27T10:37:48.881Z"
+        },
+        {
+          "id": "cust-lakshmi",
+          "shopId": "demo-kirana",
+          "name": "Lakshmi Devi",
+          "phone": "99890 44120",
+          "address": "Subedari Colony",
+          "udharBalance": 1250,
+          "lastActivityAt": "2026-11-26T13:37:48.881Z",
+          "reminderNote": "Promises settlement on 1st",
+          "updatedAt": "2026-11-26T13:37:48.881Z"
+        },
+        {
+          "id": "cust-suresh",
+          "shopId": "demo-kirana",
+          "name": "Suresh Patel",
+          "phone": "97012 88340",
+          "address": "Near Bus Stand",
+          "udharBalance": 320,
+          "lastActivityAt": "2026-11-25T11:37:48.881Z",
+          "updatedAt": "2026-11-25T11:37:48.881Z"
+        },
+        {
+          "id": "cust-ramesh",
+          "shopId": "demo-kirana",
+          "name": "Ramesh Reddy",
+          "phone": "94401 55678",
+          "address": "Vidyaranyapuri",
+          "udharBalance": 850,
+          "lastActivityAt": "2026-11-24T13:37:48.881Z",
+          "updatedAt": "2026-11-24T13:37:48.881Z"
+        },
+        {
+          "id": "cust-anitha",
+          "shopId": "demo-kirana",
+          "name": "Anitha Sharma",
+          "phone": "98662 11904",
+          "address": "Kakatiya Colony",
+          "udharBalance": 0,
+          "lastActivityAt": "2026-11-26T23:37:48.881Z",
+          "updatedAt": "2026-11-26T23:37:48.881Z"
+        }
+      ],
+      "sales": [
+        {
+          "id": "sale-demo-1",
+          "shopId": "demo-kirana",
+          "invoiceNumber": "INV-1041",
+          "items": [
+            {
+              "productId": "prod-rice",
+              "productName": "Sona Masoori Rice",
+              "quantity": 5,
+              "unit": "kg",
+              "unitPrice": 52,
+              "lineTotal": 260
+            },
+            {
+              "productId": "prod-toordal",
+              "productName": "Toor Dal",
+              "quantity": 1,
+              "unit": "kg",
+              "unitPrice": 155,
+              "lineTotal": 155
+            }
+          ],
+          "totalAmount": 415,
+          "paymentMode": "upi",
+          "paidAmount": 415,
+          "creditAmount": 0,
+          "customerId": "cust-anitha",
+          "customerName": "Anitha Sharma",
+          "source": "manual",
+          "createdAt": "2026-11-27T14:07:48.881Z",
+          "updatedAt": "2026-11-27T14:07:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "sale-demo-2",
+          "shopId": "demo-kirana",
+          "invoiceNumber": "INV-1042",
+          "items": [
+            {
+              "productId": "prod-milk",
+              "productName": "Fresh Milk Packet (500ml)",
+              "quantity": 4,
+              "unit": "pkt",
+              "unitPrice": 30,
+              "lineTotal": 120
+            },
+            {
+              "productId": "prod-parle",
+              "productName": "Parle-G Biscuit Pack",
+              "quantity": 3,
+              "unit": "pkt",
+              "unitPrice": 10,
+              "lineTotal": 30
+            }
+          ],
+          "totalAmount": 150,
+          "paymentMode": "cash",
+          "paidAmount": 150,
+          "creditAmount": 0,
+          "source": "voice",
+          "transcript": "4 milk packet aur 3 parle biscuit cash 150",
+          "createdAt": "2026-11-27T12:37:48.881Z",
+          "updatedAt": "2026-11-27T12:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "sale-demo-3",
+          "shopId": "demo-kirana",
+          "invoiceNumber": "INV-1043",
+          "items": [
+            {
+              "productId": "prod-oil",
+              "productName": "Sunflower Cooking Oil",
+              "quantity": 2,
+              "unit": "litre",
+              "unitPrice": 145,
+              "lineTotal": 290
+            },
+            {
+              "productId": "prod-sugar",
+              "productName": "Refined Sugar",
+              "quantity": 2,
+              "unit": "kg",
+              "unitPrice": 46,
+              "lineTotal": 92
+            }
+          ],
+          "totalAmount": 382,
+          "paymentMode": "cash",
+          "paidAmount": 382,
+          "creditAmount": 0,
+          "source": "manual",
+          "createdAt": "2026-11-27T11:07:48.881Z",
+          "updatedAt": "2026-11-27T11:07:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "sale-demo-4",
+          "shopId": "demo-kirana",
+          "invoiceNumber": "INV-1044",
+          "items": [
+            {
+              "productId": "prod-rice",
+              "productName": "Sona Masoori Rice",
+              "quantity": 6,
+              "unit": "kg",
+              "unitPrice": 52,
+              "lineTotal": 312
+            },
+            {
+              "productId": "prod-tea",
+              "productName": "Red Label Tea (250g)",
+              "quantity": 1,
+              "unit": "pkt",
+              "unitPrice": 135,
+              "lineTotal": 135
+            }
+          ],
+          "totalAmount": 447,
+          "paymentMode": "udhar",
+          "paidAmount": 0,
+          "creditAmount": 447,
+          "customerId": "cust-ravi",
+          "customerName": "Ravi Kumar",
+          "source": "manual",
+          "createdAt": "2026-11-27T10:37:48.881Z",
+          "updatedAt": "2026-11-27T10:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "sale-demo-5",
+          "shopId": "demo-kirana",
+          "invoiceNumber": "INV-1038",
+          "items": [
+            {
+              "productId": "prod-atta",
+              "productName": "Wheat Flour (Atta)",
+              "quantity": 10,
+              "unit": "kg",
+              "unitPrice": 42,
+              "lineTotal": 420
+            },
+            {
+              "productId": "prod-soap",
+              "productName": "Dettol Bath Soap",
+              "quantity": 4,
+              "unit": "pcs",
+              "unitPrice": 38,
+              "lineTotal": 152
+            }
+          ],
+          "totalAmount": 572,
+          "paymentMode": "upi",
+          "paidAmount": 572,
+          "creditAmount": 0,
+          "source": "manual",
+          "createdAt": "2026-11-26T11:37:48.881Z",
+          "updatedAt": "2026-11-26T11:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "sale-demo-6",
+          "shopId": "demo-kirana",
+          "invoiceNumber": "INV-1035",
+          "items": [
+            {
+              "productId": "prod-rice",
+              "productName": "Sona Masoori Rice",
+              "quantity": 15,
+              "unit": "kg",
+              "unitPrice": 52,
+              "lineTotal": 780
+            },
+            {
+              "productId": "prod-toordal",
+              "productName": "Toor Dal",
+              "quantity": 3,
+              "unit": "kg",
+              "unitPrice": 155,
+              "lineTotal": 465
+            }
+          ],
+          "totalAmount": 1245,
+          "paymentMode": "cash",
+          "paidAmount": 1245,
+          "creditAmount": 0,
+          "source": "manual",
+          "createdAt": "2026-11-25T09:37:48.881Z",
+          "updatedAt": "2026-11-25T09:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "sale-demo-7",
+          "shopId": "demo-kirana",
+          "invoiceNumber": "INV-1029",
+          "items": [
+            {
+              "productId": "prod-oil",
+              "productName": "Sunflower Cooking Oil",
+              "quantity": 5,
+              "unit": "litre",
+              "unitPrice": 145,
+              "lineTotal": 725
+            },
+            {
+              "productId": "prod-detergent",
+              "productName": "Surf Excel Powder (500g)",
+              "quantity": 4,
+              "unit": "pkt",
+              "unitPrice": 72,
+              "lineTotal": 288
+            }
+          ],
+          "totalAmount": 1013,
+          "paymentMode": "upi",
+          "paidAmount": 1013,
+          "creditAmount": 0,
+          "source": "manual",
+          "createdAt": "2026-11-22T15:37:48.881Z",
+          "updatedAt": "2026-11-22T15:37:48.881Z",
+          "synced": true
+        }
+      ],
+      "udharEntries": [
+        {
+          "id": "udh-1",
+          "shopId": "demo-kirana",
+          "customerId": "cust-ravi",
+          "customerName": "Ravi Kumar",
+          "type": "credit",
+          "amount": 500,
+          "balanceAfter": 500,
+          "note": "Monthly ration items on credit",
+          "linkedSaleId": "sale-demo-4",
+          "source": "manual",
+          "createdAt": "2026-11-27T10:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "udh-2",
+          "shopId": "demo-kirana",
+          "customerId": "cust-lakshmi",
+          "customerName": "Lakshmi Devi",
+          "type": "credit",
+          "amount": 1650,
+          "balanceAfter": 1650,
+          "note": "Festival grocery order",
+          "source": "manual",
+          "createdAt": "2026-11-23T15:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "udh-3",
+          "shopId": "demo-kirana",
+          "customerId": "cust-lakshmi",
+          "customerName": "Lakshmi Devi",
+          "type": "repayment",
+          "amount": 400,
+          "balanceAfter": 1250,
+          "note": "Partial UPI repayment",
+          "source": "manual",
+          "createdAt": "2026-11-26T13:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "udh-4",
+          "shopId": "demo-kirana",
+          "customerId": "cust-suresh",
+          "customerName": "Suresh Patel",
+          "type": "credit",
+          "amount": 320,
+          "balanceAfter": 320,
+          "note": "Oil and biscuits",
+          "source": "manual",
+          "createdAt": "2026-11-25T11:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "udh-5",
+          "shopId": "demo-kirana",
+          "customerId": "cust-ramesh",
+          "customerName": "Ramesh Reddy",
+          "type": "credit",
+          "amount": 850,
+          "balanceAfter": 850,
+          "note": "Rice bag & dal credit",
+          "source": "manual",
+          "createdAt": "2026-11-24T13:37:48.881Z",
+          "synced": true
+        }
+      ],
+      "expenses": [
+        {
+          "id": "exp-1",
+          "shopId": "demo-kirana",
+          "title": "Shop Electricity Bill",
+          "category": "Electricity",
+          "amount": 480,
+          "paymentMode": "upi",
+          "note": "Monthly meter reading",
+          "source": "manual",
+          "createdAt": "2026-11-27T09:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "exp-2",
+          "shopId": "demo-kirana",
+          "title": "Auto Transport for Mandi Stock",
+          "category": "Transport",
+          "amount": 180,
+          "paymentMode": "cash",
+          "note": "Rice & onion delivery",
+          "source": "manual",
+          "createdAt": "2026-11-27T13:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "exp-3",
+          "shopId": "demo-kirana",
+          "title": "Carry Bags & Packing Paper",
+          "category": "Packaging",
+          "amount": 240,
+          "paymentMode": "cash",
+          "source": "manual",
+          "createdAt": "2026-11-25T15:37:48.881Z",
+          "synced": true
+        },
+        {
+          "id": "exp-4",
+          "shopId": "demo-kirana",
+          "title": "Shop Monthly Rent",
+          "category": "Shop Rent",
+          "amount": 4500,
+          "paymentMode": "bank",
+          "note": "Paid to landlord",
+          "source": "manual",
+          "createdAt": "2026-11-20T03:37:48.881Z",
+          "synced": true
+        }
+      ],
+      "appliedKeys": []
+    },
+    "shop-1ab4daec": {
+      "profile": {
+        "id": "shop-1ab4daec",
+        "code": "PRIVA-734",
+        "name": "Private Test Kirana",
+        "ownerName": "Test",
+        "phone": "",
+        "address": "",
+        "city": "India",
+        "shopType": "Kirana & General Store",
+        "currency": "INR",
+        "isPublic": false,
+        "hasPin": true,
+        "lowStockDefault": 8,
+        "categories": [
+          "Grains & Pulses",
+          "Oils & Ghee",
+          "Dairy & Bakery",
+          "Snacks & Beverages",
+          "Personal Care",
+          "Vegetables",
+          "Household"
+        ],
+        "expenseCategories": [
+          "Electricity",
+          "Shop Rent",
+          "Wholesale Restock",
+          "Transport",
+          "Staff & Tea",
+          "Packaging",
+          "Maintenance",
+          "Other"
+        ],
+        "voiceReadbackEnabled": true,
+        "aiModel": "gemini-4-hydrogen",
+        "createdAt": "2026-11-27T15:37:40.864Z",
+        "updatedAt": "2026-11-27T15:37:40.864Z"
+      },
+      "pinHash": "baf18b80768339b47f2401a382c129b2:a1d8b2d565b6f65fd9f13758724a10b56b930346d26abf15f1bc07bc377ecdbb060eb304f080dd45900085235a4bf10d7e1aa1c81c055473380d9f7b770c69df",
+      "products": [],
+      "customers": [],
+      "sales": [],
+      "udharEntries": [],
+      "expenses": [],
+      "appliedKeys": []
+    }
+  }
+}
